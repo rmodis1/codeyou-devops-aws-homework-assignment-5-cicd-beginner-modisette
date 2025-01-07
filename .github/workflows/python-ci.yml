@@ -29,7 +29,7 @@ jobs:
         run: bandit -r .
 
       - name: Run safety
-      - uses: pyupio/safety-action@v1
+        uses: pyupio/safety-action@v1
         with:
           api-key: ${{ secrets.SAFETY_API_KEY }}
           
